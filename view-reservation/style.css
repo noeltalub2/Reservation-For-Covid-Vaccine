@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+}
+
+body {
+    background-color: #f7f8f8;
+    min-width: 800px;
+    min-height: 900px;
+}
+
+p {
+    color: #565f67;
+    font-size: 1.25rem;
+    text-transform:capitalize;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #404E67;
+}
+
+h3 {
+    color: #107ce8;
+}
+
+/*--------------------NAVIGATION BAR------------------------*/
+.main-nav ul {
+    background-color: #171616;
+    list-style: none;
+    display: flex;
+}
+
+.main-nav a{
+    display: block;
+}
+
+.main-nav ul li.items {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    flex: 1;
+}
+
+.main-nav ul li.items > a {
+    color:white;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 10px;
+    transition: .2s;
+}
+
+.main-nav ul li.items a:hover {
+    background-color: rgb(99, 99, 165);
+}
+
+/*--------TITLE LOGO--------*/
+.title-logo {
+    background-color: #7ab779;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 5px solid #367e33;
+}
+
+.title-logo h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 0 0 .75rem;
+}
+
+.icon {
+    width: 70px;
+}
+
+.icon-title{
+    width: 30px;
+    margin-right: .75rem;
+}
+
+/*-------OUTPUT DATA--------*/
+.wrapper {
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    margin: 20px;
+    position: relative;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #999898;
+    border-radius: 15px;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.container-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.container-content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.output {
+    height: auto;
+    width: auto;
+    background-color: #fff;
+    padding: 1rem;
+    border: 2px solid #e9e9e9;
+    margin:0 .75rem .75rem 0 ;
+}
