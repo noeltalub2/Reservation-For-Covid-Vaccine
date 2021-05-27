@@ -157,12 +157,12 @@ span {
     }
     .sidebar {
         width: 100px;
-        padding: 10px 5px;
+        padding: 8px 3px;
     }
 
     .side-container {
         border: 1px solid #828282;
-        border-radius: 7px;
+        border-radius: 5px;
     }
     .side-text-primary {
         font-size: .5rem;
