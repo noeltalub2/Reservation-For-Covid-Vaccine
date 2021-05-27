@@ -162,6 +162,7 @@ span {
 
     .side-container {
         border: 1px solid #828282;
+        border-radius: 7px;
     }
     .side-text-primary {
         font-size: .5rem;
