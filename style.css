@@ -98,7 +98,6 @@ span {
 
 .icon-link {
     width: 50px;
-
 }
 
 /*-----------SIDE BAR-------------*/
@@ -118,10 +117,12 @@ span {
     border-radius: 15px;
     padding: .5rem;
     margin-bottom: 20px;
+    margin-right: auto;
 }
 
 .side-container:first-child{
     flex-direction: column;
+    text-align: center;
     margin-bottom: 70px;
 
 }
@@ -157,15 +158,19 @@ span {
     }
     .sidebar {
         width: 100px;
-        padding: 8px 3px;
+        padding: 13px 5px;
     }
-
     .side-container {
         border: 1px solid #828282;
         border-radius: 5px;
+        padding: .2rem;
+        margin-bottom: 10px;
+    }
+    .side-container:first-child {
+      margin-bottom: 20px;
     }
     .side-text-primary {
-        font-size: .5rem;
+      font-size: .42rem;
     }
 
     .icon-secondary {
@@ -175,21 +180,31 @@ span {
     .side-text-secondary {
         font-size: .4rem;
     }
-
+    .container {
+      margin-top: 7px;
+      margin-right: 7px;
+    }
     .selection-links {
-        padding: 1.25rem;
+        padding: .8rem;
+        margin: auto auto 7px 7px;
     }
     .selection-links h2 {
-        font-size: 1.1rem;
+        font-size: .8rem;
     }
+    
+    .selection-links::after{
+      height: 2px;
+    }
+    
     .icon-link {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
     .icon-primary {
-        width: 30px;
+        width: 25px;
+        margin: .2rem;
     }
     .logo {
-        width: 60px;
+        width: 40px;
     }
 }
