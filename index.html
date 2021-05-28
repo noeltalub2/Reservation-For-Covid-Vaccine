@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project By Talub & Garcia</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="sidebar">
+		<div class="side-container">
+			<img src="./images/icons/account.png" alt="account" class="icon-primary">
+			<p class="side-text-primary">NOEL MICHAEL TALUB</p>
+			<p class="side-text-primary">RALPH GARCIA</p>
+		</div>
+        <div class="side-container">
+			<img src="./images/icons/reserved.png" alt="reserved" class="icon-secondary">
+			<p id="total-reserved" class="side-text-secondary"></p>
+		</div>
+		<div class="side-container">
+			<p class="side-text-secondary">FINAL PROJECT v.2.0.1</p>
+		</div>
+		<div class="side-container">
+			<p class="side-text-secondary">LAST UPDATED: 5-27-2021</p>
+		</div>
+    </div>
+	<div class="wrapper">
+		<nav class="nav-bar">
+			<div class="title-logo">
+				<img src="images/icons/hospital.png" alt="" class="logo">
+			</div>
+			<div class="title-header">
+				<h1>CLINIC COVID-19 RESERVATION SYSTEM</h1>
+			</div>
+		</nav>
+		<div class="container">
+			<a href="./view-reservation/viewReservation.html">
+				<div class="selection-links">
+					<img src="images/icons/archive.png" alt="viewIcon" class="icon-link">
+					<h2>VIEW RESERVATION</h2>
+				</div>
+			</a>
+			<a href="./make-reservation/makeReservation.html">
+				<div class="selection-links">
+					<img src="images/icons/follow.png" alt="addIcon" class="icon-link">
+					<h2>MAKE RESERVATION</h2>
+				</div>
+			</a>
+			<a href="./del-reservation/delReservation.html">
+				<div class="selection-links">
+					<img src="images/icons/x-button.png" alt="delIcon" class="icon-link">
+					<h2>DELETE RESERVATION</h2>
+				</div>
+			</a>
+			<a href="./generate-report/genReport.html">
+				<div class="selection-links">
+					<img src="images/icons/create.png" alt="generateIcon" class="icon-link">
+					<h2>GENERATE REPORT</h2>
+				</div>
+			</a>
+			<a href="" onclick='exitPage()'>
+				<div class="selection-links">
+					<img src="images/icons/exit.png" alt="exit" class="icon-link">
+					<h2>EXIT APPLICATION</h2>
+				</div>
+			</a>	
+		</div>
+	</div>
+	<script>
+		function exitPage(){
+			window.close();
+		}
+		function readTotal() {
+			var reservation;
+			var data = JSON.parse(window.localStorage.getItem("Data"));
+
+			if (data == null) {
+				reservation = [];
+			}
+			else {
+				reservation = data;
+			}
+			document.getElementById("total-reserved").innerHTML = `TOTAL RESERVED: <span>${reservation.length}</span>`;
+		}
+		readTotal();
+	</script>
+</body>
+</html>
